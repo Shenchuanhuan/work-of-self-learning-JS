@@ -1,0 +1,99 @@
+body,p{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color:#000000;
+}
+img{
+	border:0;
+}
+
+.border-box{
+	width:400px;
+	margin:100px auto;
+	padding:10px;
+}
+
+/*切换图片按钮样式*/
+.buttonBox{
+	padding:10px;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#order,
+#circle{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	border:1px solid #000;
+	background:#f1f1f1;
+	border-radius:10px;
+	margin-right:5px;
+}
+#btnIntro{
+	width:100%;
+	height:20px;
+	text-align: center;
+	margin-top:15px;
+}
+
+/*图片区域样式*/
+#imageBox{
+	position: relative;
+	box-sizing: border-box;
+	border:5px solid #CCCCCC;
+	width:350px;
+	height:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#pics{
+	width:100%;
+	height:100%;
+}
+/*张数及底部文字样式*/
+#num,
+#text{
+	display: block;
+	text-align:center;
+	color:#fff;
+	position: absolute;
+	left:0;
+	width:100%;
+	background:rgba(0,0,0,0.4);
+}
+#imageBox #num{
+	top:0;
+}
+#imageBox #text{
+	bottom:0;
+}
+/*前后切换按钮样式*/
+#imageBox a{
+	display: block;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	position: absolute;
+	left:10px;
+	top:155px;
+	background:rgba(0,0,0,0.3);
+	color:#ccc;
+	font-size:40px;
+	text-align: center;
+	transition:0.5s;
+}
+#imageBox #next{
+	left:280px;
+}
+#imageBox a:hover{
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+}
