@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>draw a circle by JS</title>
+		<style>
+			#drawing{
+				width:500px;
+				height:500px;
+				border:1px solid #000;
+				position: relative;
+			}
+			.circle{
+				width:50px;
+				height:50px;
+				background-color:green;
+				border-radius:25px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="drawing">
+		</p>
+		<script>
+			var drawing = document.getElementById('drawing');
+			var divs = document.getElementsByTagName('div');
+			var $a = Math.PI/180; 
+			var $r = 100;//半径 
+			//i 表示角度数;$a 表示一弧度
+			
+			
+			for(var i=0;i<360;i++){
+				drawing.innerHTML +='<div class="circle"></div>';
+			}
+		
+			for(var i=0;i<360;i++){
+					divs[i].style.left =100+Math.cos($a*i)*$r +'px';
+					divs[i].style.top =200+Math.sin($a*i)*$r +'px';
+					console.log(i);
+			}
+		</script>
+<!--
+	It's a circle drew by JS.
+-->
+	</body>
+</html>
