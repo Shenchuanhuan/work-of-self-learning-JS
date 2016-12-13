@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Narcissistic Number</title>
+	</head>
+	<body>
+		<script>
+		for(var i=100;i<1000;i++){
+				var x = (i-i%100)/100;
+				var y = (i%100 - i%100%10)/10;
+				var z = i%100%10;
+				var n = x*x*x + y*y*y + z*z*z;
+				if(i==n){
+					document.body.innerHTML += n + '<br/>';
+					console.log(n);//print result in console
+				}
+		}
+			//the unit：i%100%10
+			//decade：(i%100 - i%100%10)%10
+			//hundreds place：(i-i%100)/100
+		</script>
+	</body>
+</html>
