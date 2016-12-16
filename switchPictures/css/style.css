@@ -1,0 +1,75 @@
+body{
+	margin:0;
+	padding:0;
+}
+img{
+	border:0;
+	width:100%;
+	height:100%;
+}
+/*初始化布局*/
+#box{
+	width:880px;
+	height:560px;
+	background: url(../img/bg.png) no-repeat;
+	margin:10px auto;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	display: block;
+	width:67px;
+	height:16px;
+	position: absolute;
+	top:54px;
+}
+#prev{
+	left:22px;
+}
+#next{
+	left:97px;
+}
+#box div{
+	height:245px;
+	position: absolute;
+	top:110px;
+	cursor: pointer;
+}
+#box #con1{
+	width:448px;
+	left:49px;
+}
+#box #con2{
+	width:248px;
+	left:560px;
+}
+span{
+	position: absolute;
+	display: inline-block;
+}
+#txt1,#txt2
+{	
+	width:448px;
+	height:34px;
+	line-height:34px;
+	text-align: center;
+	left:49px;
+	bottom:168px;
+	font-size:14px;
+}
+#box #txt2{
+	width:248px;
+	left:560px;
+}
+#page1,#page2
+{
+	width:48px;
+	height:41px;
+	text-align: left;
+	bottom:135px;
+	left:49px;	
+	font-family: sans-serif;
+}
+#box #page2{
+	left:550px;
+}
