@@ -1,0 +1,62 @@
+body,ul,li,h2,p{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+.clearFix:after{
+	content:'';
+	height:0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+/*初始化页面布局*/
+#list{
+	width:250px;
+	border:1px solid #ccc;
+	box-shadow: 0px 0px 1px 2px #CCCCCC;
+	margin:100px auto;
+}
+.title{
+	height:30px;
+	background:#63f7ff;
+}
+.title img{
+	float:left;
+	box-sizing: border-box;
+	padding:11px;
+	width:30px;
+	height:30px;
+	
+}
+.title span{
+	float:left;
+	height:30px;
+	line-height:30px;
+	text-align: left;
+	font-size:20px;
+	font-weight: bold;
+	font-family: "宋体";
+	cursor: pointer;
+}
+/*初始化页面布局 end*/
+
+/*好友项样式*/
+#list ul{
+	display: none;
+}
+#list ul li{
+	height:20px;
+	border-bottom:1px solid #000;
+	text-align: center;
+	cursor: pointer;
+}
+#list ul li:nth-last-of-type(1){
+	border-bottom:0;
+}
+.colors{
+	background:lightsalmon;
+}
