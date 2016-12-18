@@ -38,8 +38,12 @@ for(var i=0;i<aP.length;i++){
 			//在这里绑定Li的点击事件
 			for(var j=0;j<arrCon[index].length;j++){
 				aUl[index].getElementsByTagName('li')[j].onclick = function (){
-					clearli();
-					this.className = 'colors';
+					if(this.className=='colors'){
+						this.className = '';
+					}else{
+						clearli();
+						this.className = 'colors';
+					}
 				};
 			}			
 		}
